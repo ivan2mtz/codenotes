@@ -28,8 +28,12 @@ json_decode($str) y json_encode($arr)
 ### Files
 ```php
 file_exists($dir)
+
 mkdir($dir, 0755, true)
+
 $fp = fopen($ruta_archivo, 'w+');
 fwrite($fp, $str);
 fclose($fp);
+
+$str = file_get_contents($ruta_archivo); // Regresa el contenido de un archivo como string
 ```
